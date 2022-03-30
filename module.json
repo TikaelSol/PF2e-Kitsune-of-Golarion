@@ -1,0 +1,72 @@
+{
+  "name": "pf2e-kitsune",
+  "title": "PF2e Kitsune of Golarion",
+  "description": "Adds new options for Kitsune characters from the Kitsune of Golarion book series ",
+  "author": "Tikael",
+  "authors": [],
+  "url": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion",
+  "flags": {},
+  "version": "1.0",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+  "scripts": [],
+  "esmodules": [],
+  "styles": [],
+  "languages": [],
+  "packs": [{
+    "label": "Kitsune - Actions",
+    "name": "kitsune-Actions",
+    "path": "./packs/kitsune-actions.db",
+    "system": "pf2e",
+    "package": "pf2e-kitsune",
+    "private": false,
+    "type": "Item"
+  },{
+    "label": "Kitsune - Feats",
+    "name": "kitsune-Feats",
+    "path": "./packs/kitsune-feats.db",
+    "system": "pf2e",
+    "package": "pf2e-kitsune",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Kitsune - Heritages",
+    "name": "kitsune-Heritages",
+    "path": "./packs/kitsune-heritages.db",
+    "system": "pf2e",
+    "package": "pf2e-kitsune",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Kitsune - Equipment",
+    "name": "kitsune-Equipment",
+    "path": "./packs/kitsune-equipment.db",
+    "system": "pf2e",
+    "package": "pf2e-kitsune",
+    "private": false,
+    "type": "Item"
+  }],
+  "system": [
+    "pf2e"
+  ],
+  "dependencies": [],
+  "socket": false,
+  "manifest": "https://raw.githubusercontent.com/TikaelSol/PF2e-Kitsune-of-Golarion/master/module.json",
+  "download": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion/archive/refs/heads/main.zip",
+  "protected": false,
+  "coreTranslation": false,
+  "minimumSystemVersion": "3.8",
+  "library": false,
+  "flags": {
+    "pf2e-kitsune": {
+      "pf2e-homebrew": {
+        "equipmentTraits": {
+          "noh-mask": {
+            "label": "Noh Mask",
+            "description": "<p>Items with the noh mask trait allow a character that can Change Shape who invests into the mask to access new forms. A noh mask's alternate form, including any heritages, ancestry feats, or special abilities it provides, are chosen when the mask is created; once chosen they cannot be changed. While transformed, you lose any abilities from your heritage or ancestry that require your true form's anatomy at the GM's decision, such as a kitsune's low-light vision.</p>"
+          }
+        }
+      }
+    }
+  }
+}
