@@ -6,7 +6,7 @@
   "authors": [],
   "url": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion",
   "flags": {},
-  "version": "1.0",
+  "version": "1.1",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "scripts": [],
@@ -45,6 +45,22 @@
     "package": "pf2e-kitsune",
     "private": false,
     "type": "Item"
+  }, {
+    "label": "Kitsune - Spells",
+    "name": "kitsune-spells",
+    "path": "./packs/kitsune-spells.db",
+    "system": "pf2e",
+    "package": "pf2e-kitsune",
+    "private": false,
+    "type": "Item"
+  }, {
+    "label": "Kitsune - Effects",
+    "name": "kitsune-effects",
+    "path": "./packs/kitsune-effects.db",
+    "system": "pf2e",
+    "package": "pf2e-kitsune",
+    "private": false,
+    "type": "Item"
   }],
   "system": [
     "pf2e"
@@ -55,15 +71,25 @@
   "download": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion/archive/refs/heads/main.zip",
   "protected": false,
   "coreTranslation": false,
-  "minimumSystemVersion": "3.8",
+  "minimumSystemVersion": "3.9.1",
   "library": false,
   "flags": {
     "pf2e-kitsune": {
       "pf2e-homebrew": {
         "equipmentTraits": {
+          "assimilate": {
+            "label": "Assimilate",
+            "description": "You must have a specific ability, such as a class feature, feat, or spell known to Invest the item. If you meet this requirement, investing in the item causes you to lose access to the required ability, which is assimilated into the item until it is destroyed, or a specific condition is met as described by the item. If you die, the assimilate item remains invested with your ability. Anyone can use an assimilate item so long as someone has invested in it, not just the person who Invested it. Unlike most invest items, your investiture in an assimilate item does not end during your daily preparations or when the item is removed."
+          },
           "noh-mask": {
             "label": "Noh Mask",
-            "description": "<p>Items with the noh mask trait allow a character that can Change Shape who invests into the mask to access new forms. A noh mask's alternate form, including any heritages, ancestry feats, or special abilities it provides, are chosen when the mask is created; once chosen they cannot be changed. While transformed, you lose any abilities from your heritage or ancestry that require your true form's anatomy at the GM's decision, such as a kitsune's low-light vision.</p>"
+            "description": "Items with the noh mask trait allow a character that can Change Shape who invests into the mask to access new forms. A noh mask's alternate form, including any heritages, ancestry feats, or special abilities it provides, are chosen when the mask is created; once chosen they cannot be changed. While transformed, you lose any abilities from your heritage or ancestry that require your true form's anatomy at the GM's decision, such as a kitsune's low-light vision."
+          }
+        },
+        "SpellTraits": {
+          "kitsune": {
+            "label": "PF2E.TraitKitsune",
+            "description": "PF2E.TraitDescriptionKitsune"
           }
         }
       }
