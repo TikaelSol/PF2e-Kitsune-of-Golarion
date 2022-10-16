@@ -1,78 +1,7 @@
 {
-  "name": "pf2e-kitsune",
   "title": "PF2e Kitsune of Golarion",
-  "description": "Adds new options for Kitsune characters from the Kitsune of Golarion book series ",
-  "author": "Tikael",
-  "authors": [],
+  "description": "Adds new options for Kitsune characters from the Kitsune of Golarion book series",
   "url": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion",
-  "flags": {},
-  "version": "1.1",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
-  "scripts": [],
-  "esmodules": [],
-  "styles": [],
-  "languages": [],
-  "packs": [{
-    "label": "Kitsune - Actions",
-    "name": "kitsune-Actions",
-    "path": "./packs/kitsune-actions.db",
-    "system": "pf2e",
-    "package": "pf2e-kitsune",
-    "private": false,
-    "type": "Item"
-  },{
-    "label": "Kitsune - Feats",
-    "name": "kitsune-Feats",
-    "path": "./packs/kitsune-feats.db",
-    "system": "pf2e",
-    "package": "pf2e-kitsune",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Kitsune - Heritages",
-    "name": "kitsune-Heritages",
-    "path": "./packs/kitsune-heritages.db",
-    "system": "pf2e",
-    "package": "pf2e-kitsune",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Kitsune - Equipment",
-    "name": "kitsune-Equipment",
-    "path": "./packs/kitsune-equipment.db",
-    "system": "pf2e",
-    "package": "pf2e-kitsune",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Kitsune - Spells",
-    "name": "kitsune-spells",
-    "path": "./packs/kitsune-spells.db",
-    "system": "pf2e",
-    "package": "pf2e-kitsune",
-    "private": false,
-    "type": "Item"
-  }, {
-    "label": "Kitsune - Effects",
-    "name": "kitsune-effects",
-    "path": "./packs/kitsune-effects.db",
-    "system": "pf2e",
-    "package": "pf2e-kitsune",
-    "private": false,
-    "type": "Item"
-  }],
-  "system": [
-    "pf2e"
-  ],
-  "dependencies": [],
-  "socket": false,
-  "manifest": "https://raw.githubusercontent.com/TikaelSol/PF2e-Kitsune-of-Golarion/master/module.json",
-  "download": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion/archive/refs/heads/main.zip",
-  "protected": false,
-  "coreTranslation": false,
-  "minimumSystemVersion": "3.9.1",
-  "library": false,
   "flags": {
     "pf2e-kitsune": {
       "pf2e-homebrew": {
@@ -94,5 +23,87 @@
         }
       }
     }
-  }
+  },
+  "version": "1.2",
+  "packs": [
+    {
+      "label": "Kitsune - Actions",
+      "name": "kitsune-Actions",
+      "path": "packs/kitsune-actions.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "label": "Kitsune - Feats",
+      "name": "kitsune-Feats",
+      "path": "packs/kitsune-feats.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "label": "Kitsune - Heritages",
+      "name": "kitsune-Heritages",
+      "path": "packs/kitsune-heritages.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "label": "Kitsune - Equipment",
+      "name": "kitsune-Equipment",
+      "path": "packs/kitsune-equipment.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "label": "Kitsune - Spells",
+      "name": "kitsune-spells",
+      "path": "packs/kitsune-spells.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "label": "Kitsune - Effects",
+      "name": "kitsune-effects",
+      "path": "packs/kitsune-effects.db",
+      "system": "pf2e",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    }
+  ],
+  "manifest": "https://raw.githubusercontent.com/TikaelSol/PF2e-Kitsune-of-Golarion/master/module.json",
+  "download": "https://github.com/TikaelSol/PF2e-Kitsune-of-Golarion/archive/refs/heads/main.zip",
+  "id": "pf2e-kitsune",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.288"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "4.2.6"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Tikael",
+      "flags": {}
+    }
+  ]
 }
